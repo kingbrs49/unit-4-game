@@ -5,11 +5,143 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>The Collector Of Crystal!</title>
 </head>
 
 <body>
 
+    <div class="container" style="background-image: url('assets/images/crystal-background.jpg');">
+
+        <div class="row d-flex justify-content-center">
+
+            <h2>THE COLLECTOR OF "CRYSTALS"!!!</h2>
+
+        </div>
+
+        <div class="row d-flex justify-content-center">
+
+            <div class="col-md-8">
+
+                <div class="card">
+
+                    <div class="card-body">
+
+                        <div class="p-3 mb-2 bg-info text-white">
+
+                            <h3>INSTRUCTIONS:</h3>
+
+                            <p>You will be given a random number (See: "No. to Match") to begin the game.</p>
+
+                            <p>You see those four pictures of "Crystals" (You see what I did there?) below that random
+                                number?
+                                You're supposed to click on a picture - each click will add a specific amount of points
+                                (ranging between 1 and 12) to your total score.</p>
+
+                            <p>The object of the game is to match your total score to said random number. You lose the
+                                game if
+                                your total score goes ABOVE the random number. So click carefully.</p>
+
+                            <p>Oh, and here's the kicker -- you won't know the amount of points each "Crystal" is worth
+                                until you click on it.
+                                So, again -- click carefully.</p>
+
+                            <p>And, one more thing: the values of each "Crystal" resets after each new game.</p>
+
+                            <p>Let the games begin.</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div>
+
+            <div class="row d-flex justify-content-center">
+
+                <div class="col-md-3">
+
+                    <div class="card">
+
+                        <div class="card-body">
+
+                            <h4>
+                                No. to Match: <div id="gameTotalDisplay"></div>
+                            </h4>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+
+                    <div class="card">
+
+                        <div class="card-body">
+
+                            <h4>
+                                Total: <div id="userTotalDisplay"></div>
+                            </h4>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+
+                    <div class="card">
+
+                        <div class="card-body">
+
+                            <h4>
+                                Wins: <div id="winCountDisplay"></div>
+                            </h4>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+
+                    <div class="card">
+
+                        <div class="card-body">
+
+                            <h4>
+                                Losses: <div id="lossCountDisplay"></div>
+                            </h4>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+
+                <div class="row d-flex justify-content-center">
+
+                    <div class="buttons">
+
+                        <img class="image" id="image1" src="assets/images/crystal-1.jpg" height="150" width="150">
+                        <img class="image" id="image2" src="assets/images/crystal-2.jpg" height="150" width="150">
+                        <img class="image" id="image3" src="assets/images/crystal-3.jpg" height="150" width="150">
+                        <img class="image" id="image4" src="assets/images/crystal-4.jpg" height="150" width="150">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="./assets/javascript/game.js"></script>
 </body>
 
 </html>
